@@ -1,0 +1,12 @@
+project2_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: 0.0.0.0
+      port: 3306  # optional
+      database: projecoes2_banco # optional, should be same as schema
+      schema: projecoes2_banco
+      username: root
+      password: admin
+      driver: MySQL ODBC 8.0 ANSI Driver
