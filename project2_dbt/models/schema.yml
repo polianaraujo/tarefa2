@@ -3,7 +3,7 @@ version: 2
 models:
   - name: projecoes2_table # tabela do banco de dados
     columns:
-      - name: ano
+      - name: year
       - name: local
       - name: pop_t
       - name: pop_h
