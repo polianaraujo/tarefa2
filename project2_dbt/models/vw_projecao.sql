@@ -5,5 +5,5 @@ WITH vw_projecao AS (
         e0_t,
         e60_t
     FROM projecoes2_banco.projecoes2_table
-) SELECT * FROM vw_projecao;
+) SELECT * FROM vw_projecao
 -- FUNCIONA

@@ -5,11 +5,11 @@ WITH vw_salario AS (
         elementary, 
         high, 
         college, 
-        `age_14_29`, 
-        `age_30_49`, 
-        `age_50_59`, 
-        `age_60_plus`
+        age_14_29, 
+        age_30_49, 
+        age_50_59, 
+        age_60_plus
     FROM projecoes2_banco.salario_table
-    ORDER BY year;
-) SELECT * FROM vw_salario;
+    ORDER BY year
+) SELECT * FROM vw_salario
 -- FUNCIONA

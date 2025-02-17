@@ -5,7 +5,7 @@ WITH vw_etario AS (
         SUM(work_pop) AS total_work_pop_etario
     FROM projecoes2_banco.etario_table
     GROUP BY year, features
-    ORDER BY year, features;
+    ORDER BY year, features
 )
-SELECT * FROM vw_etario;
+SELECT * FROM vw_etario
 -- FUNCIONA

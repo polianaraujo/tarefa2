@@ -4,9 +4,27 @@ models:
   - name: projecoes2_table # tabela do banco de dados
     columns:
       - name: year
-      - name: local
       - name: pop_t
-      - name: pop_h
-      - name: pop_m
       - name: e0_t
       - name: e60_t
+  - name: etario_table # tabela do banco de dados
+    columns:
+      - name: year
+      - name: features
+      - name: total_work_pop_etario
+  - name: socio_table # tabela do banco de dados
+    columns:
+      - name: year
+      - name: degree
+      - name: total_work_pop_etario
+  - name: salario_table # tabela do banco de dados
+    columns:
+      - name: year
+      - name: incomplete
+      - name: elementary
+      - name: high
+      - name: college
+      - name: age_14_29
+      - name: age_30_49
+      - name: age_50_59
+      - name: age_60_plus
