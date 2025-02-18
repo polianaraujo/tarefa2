@@ -124,3 +124,7 @@ Quanto aos rendimentos, observa-se valores maiores relacionados às faixas etár
 ### Conclusões Gerais
 
 Assim, diante do aumento da idade média dos brasileiros e do percentual destes com qualificação, podemos inferir que na janela de crescimento demográfico, i.e., nos próximos 20 anos, até 2045,  teremos um aumento deste público que demandará cada vez mais produtos e serviços especializados para este público, que é naturalmente mais exigente e financeiramente mais abastado.
+
+## Vídeo da Explicação
+
+[Clique aqui](https://drive.google.com/file/d/1b6ZRDbl6kAEHLYfH1G9gK-RziaqnSBX9/view?usp=sharing) para acessar o vídeo da explicação no Google Drive.
