@@ -1,30 +1,56 @@
 version: 2
 
 models:
-  - name: projecoes2_table # tabela do banco de dados
+  - name: projecoes2_table  # Nome da tabela no banco de dados
+    description: "Tabela contendo projeções populacionais e indicadores demográficos."
     columns:
       - name: year
+        description: "Ano da projeção populacional."
       - name: pop_t
+        description: "População total estimada para o ano."
       - name: e0_t
+        description: "Expectativa de vida ao nascer (anos)."
       - name: e60_t
-  - name: etario_table # tabela do banco de dados
+        description: "Expectativa de vida aos 60 anos (anos)."
+
+  - name: etario_table
+    description: "Tabela com informações da população por faixa etária e força de trabalho."
     columns:
       - name: year
+        description: "Ano da estimativa."
       - name: features
+        description: "Faixa etária da população."
       - name: total_work_pop_etario
-  - name: socio_table # tabela do banco de dados
+        description: "População total na força de trabalho para essa faixa etária."
+
+  - name: socio_table
+    description: "Tabela que detalha a distribuição educacional da população na força de trabalho."
     columns:
       - name: year
+        description: "Ano da estimativa."
       - name: degree
+        description: "Nível de instrução da população."
       - name: total_work_pop_etario
-  - name: salario_table # tabela do banco de dados
+        description: "População total na força de trabalho com o nível de instrução especificado."
+
+  - name: salario_table
+    description: "Tabela contendo informações sobre salários médios por nível de escolaridade e faixa etária."
     columns:
       - name: year
+        description: "Ano da estimativa."
       - name: incomplete
+        description: "Renda média de pessoas sem instrução ou ensino fundamental incompleto."
       - name: elementary
+        description: "Renda média de pessoas com ensino fundamental completo ou médio incompleto."
       - name: high
+        description: "Renda média de pessoas com ensino médio completo ou superior incompleto."
       - name: college
+        description: "Renda média de pessoas com ensino superior completo."
       - name: age_14_29
+        description: "Renda média de pessoas entre 14 e 29 anos."
       - name: age_30_49
+        description: "Renda média de pessoas entre 30 e 49 anos."
       - name: age_50_59
+        description: "Renda média de pessoas entre 50 e 59 anos."
       - name: age_60_plus
+        description: "Renda média de pessoas com 60 anos ou mais."

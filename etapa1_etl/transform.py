@@ -3,7 +3,7 @@ import xlrd
 import os
 from extract import carregar_projecoes, carregar_etario, processar_subconjuntos_etario, carregar_instrucao, processar_subconjuntos_instrucao, carregar_socio
 
-csv_path = "/home/polia/repos/tarefa2/etapa1_etl/csv_temp"
+csv_path = os.path.join(os.path.dirname(__file__),"csv_temp")
 
 # Tabela 1: Projeções
 projecoes_df = carregar_projecoes()
@@ -24,7 +24,7 @@ projecoes2_df_filtrado = projecoes2_df_filtrado[colunas_desejadas].rename(column
 })
 
 # Salvar CSV
-projecoes2_df_filtrado.to_csv(os.path.join(csv_path, "projecoes.csv"), index=False)
+projecoes2_df_filtrado.to_csv(os.path.join(csv_path,"projecoes.csv"), index=False)
 
 # Tabela 2: Faixa Etária
 

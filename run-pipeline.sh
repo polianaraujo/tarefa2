@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 ./etapa1_etl/extract.py
+python3 ./etapa1_etl/transform.py
 
 python3 ./etapa1_etl/load.py 
 

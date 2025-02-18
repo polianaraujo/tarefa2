@@ -4,3 +4,6 @@ cryptography
 pymysql
 sqlalchemy
 matplotlib
+openpyxl
+xlrd
+os
