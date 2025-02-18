@@ -114,3 +114,9 @@ Os principais pontos observados:
 ### GRÁFICOS 3: Força de Trabalho por Perfil Etário e Grau de Instrução
 
 ![Salário (Idade x Instrução)](https://github.com/polianaraujo/tarefa2/blob/main/images/salario.png)
+
+Quanto aos rendimentos, observa-se valores maiores relacionados às faixas etárias de 50 anos + e para as pessoas que completaram o ensino superior.
+
+### Conclusões Gerais
+
+Assim, diante do aumento da idade média dos brasileiros e do percentual destes com qualificação, podemos inferir que na janela de crescimento demográfico, i.e., nos próximos 20 anos, até 2045,  teremos um aumento deste público que demandará cada vez mais produtos e serviços especializados para este público, que é naturalmente mais exigente e financeiramente mais abastado.
