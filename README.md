@@ -5,7 +5,7 @@ Para que as empresas possam direcionar seus investimentos e estratégias de merc
 
 ## Etapa 1 - Extração e Carregamento dos Dados
 
-A primeira coisa a ser feita é o processo de coleta e extração, transformação e armazenamento dos dados necessários em um banco de dados relacional, tudo isso presente nos arquivos ```extract.py``` e ```transform.py``` presentes na pasta ```etapa1_etl```.
+A primeira coisa a ser feita é o processo de coleta e extração, transformação e armazenamento dos dados necessários em um banco de dados relacional, tudo isso presente nos arquivos ```extract.py``` e ```transform.py``` presentes na pasta ```etapa1_etl``` e são executadas no script `run-pipeline.sh` no diretório raiz.
 
 Utilizando Python, foi feita a leitura dos arquivos em tabelas no formato ```.xls```, foram organizados e transformados em dataframes.
 
