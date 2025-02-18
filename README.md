@@ -1,5 +1,9 @@
 # Tarefa: Análise Salarial e Socioeconômica para Projeção de Alvos para Empresas
 
+Qual o maior público, com mais dinheiro, e qual seu grau de instrução, para que as empresas saibam em quem e no que investir para atendê-los?
+
+Para responder essa pergunta, basta analisar os dados de quatro tabelas disponibilizadas pelo IBGE.
+
 ## Etapa 1 - Extração e Carregamento dos Dados
 
 - **Escolha dos Dados**: Escolher um conjunto de dados que seja relevante para o candidato e que permita a aplicação de técnicas de análise de dados.
@@ -46,7 +50,9 @@ Tabela criadas:
 
 Nesta etapa, foi utilizado o DBT para criar um projeto e conectá-lo ao banco de dados gerado na etapa anterior (```projecoes2_banco```). Foram então criados **quatro modelos** para transformar os dados em um modelo dimensional, portanto, quatro tabelas e quatro views, que puderam ser acompanhadas através do DBeaver.
 
-![DBeaver](/home/polia/repos/tarefa2/images/dbeaver_png.png)
+![DBeaver](https://github.com/polianaraujo/tarefa2/blob/main/images/dbeaver_png.png)
+
+
 
 
 
@@ -57,20 +63,27 @@ Nesta etapa, foi utilizado o DBT para criar um projeto e conectá-lo ao banco de
 
 Esta etapa foi realizada no notebook Jupyter denominado ```notebook.ipynb```.
 
+Com isso podemos tirar algumas conclusões analisando os gráficos gerados.
 ...
 
 ### GRÁFICO 1: Projeção da População até 2045
 
-![Projeções](/home/polia/repos/tarefa2/images/projecoes.png)
+![Projeções](https://github.com/polianaraujo/tarefa2/blob/main/images/projecoes.png)
 
-Por quê até 2045? Dar o exemplo de quem tem 60 anos em 2024...
+A primeira tabela analisada foi a da quantidade da população brasileira ao longo dos anos, com um projeção até 2045. Com o gráfico gerado através dela é possível observar que em 2024 a expectativa média de vida é de até aproximadamente 77 anos, enquanto quem tem mais de 60 anos em 2024 possuem uma expectativa adicional de 23 anos.
+
+Então, quem tem mais de 60 anos em 2024, tem grandes chances de viver até 2048. Quem tem 40 anos hoje, terá 60 anos em 2045 possuindo uma expectativa de vida perto dos 81, mas em 2045, quem tem +60 anos tem grandes chances de viver +25, ou seja, até os 85 anos.
+
+Com isso, é possível perceber que a expectativa de vida só tende a aumentar, devido aos grandes avanços da tecnologia e medicina. Com isso, a população tende a se tornar cada vez mais velha, e com isso mais a necessidade da população irá mudar, e o mercado precisará está atento em atendê-las.
 
 
 ### GRÁFICOS 2: Força de Trabalho por Perfil Etário e Grau de Instrução
 
-![Força de Trabalho](/home/polia/repos/tarefa2/images/forca_trab.png)
+![Força de Trabalho](https://github.com/polianaraujo/tarefa2/blob/main/images/forca_trab.png)
+
+Não há projeções para a população apta a trabalhar, mas considerando os seguintes gráficos a partir de 2018 percebemos que nos últimos 6 anos a maior quantidade de pessoas aptas a trabalhar se encontrana faixa dos 30 a 49 anos. Somando a isso, a maior quantidade de pessoas por grau de instrução que estão aptas a trabalhar são pessoas com ensino médio completo e superior incompleto. Enquanto a quantidade de pessoas com ensino superior cresce gradativamente, consequentemente a população sem instrução diminui.
 
 
 ### GRÁFICOS 3: Força de Trabalho por Perfil Etário e Grau de Instrução
 
-![Salário (Idade x Instrução)](/home/polia/repos/tarefa2/images/salario.png)
+![Salário (Idade x Instrução)](https://github.com/polianaraujo/tarefa2/blob/main/images/salario.png)
