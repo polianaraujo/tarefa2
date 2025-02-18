@@ -7,6 +7,10 @@ Para que as empresas possam direcionar seus investimentos e estratégias de merc
 
 A primeira coisa a ser feita é o processo de coleta e extração, transformação e armazenamento dos dados necessários em um banco de dados relacional, tudo isso presente nos arquivos ```extract.py``` e ```transform.py``` presentes na pasta ```etapa1_etl``` e são executadas no script `run-pipeline.sh` no diretório raiz.
 
+- `extract.py`: Responsável por extrair os dados dos arquivos `.xls`.
+- `transform.py`: Processa e organiza os dados em dataframes.
+- `run-pipeline.sh`: Executa a pipeline de ETL.
+
 Utilizando Python, foi feita a leitura dos arquivos em tabelas no formato ```.xls```, foram organizados e transformados em dataframes.
 
 Os dados utilizados são provenientes de quatro tabelas do IBGE, essenciais para a análise:
