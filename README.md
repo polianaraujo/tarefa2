@@ -44,7 +44,7 @@ Para garantir um ambiente seguro e eficiente, além de permitir que o banco de d
 
 ## Etapa 2 - Modelagem dos Dados com DBT
 
-Nesta etapa, foi utilizado o DBT para criar um projeto e conectá-lo ao banco de dados gerado na etapa anterior (```projecoes2_banco```). Foram então criados **quatro modelos** para transformar os dados em um modelo dimensional, portanto, quatro tabelas e quatro views, que puderam ser acompanhadas através do DBeaver.
+Nesta etapa, foi utilizado o DBT para criar um projeto e conectá-lo ao banco de dados gerado na etapa anterior (`projecoes2_banco`). Foram então criados **quatro modelos** para transformar os dados em um modelo dimensional, portanto, quatro tabelas e quatro views, que puderam ser acompanhadas através do DBeaver.
 
 ![DBeaver](https://github.com/polianaraujo/tarefa2/blob/main/images/dbeaver_png.png)
 
@@ -55,7 +55,15 @@ Com os modelos prontos, foram realizados cálculos essenciais para análises est
 - Soma da população de homens e mulheres para visualizar a quantidade total.
 - Soma da população apta a trabalhar por ano em diferentes faixas etárias e de grau de instrução.
 
-Ao fim desta etapa, toda a modelagem foi documentada utilizando YAML. Cada modelo foi descrito com informações sobre sua lógica de transformação e origem dos dados.
+Os comandos necessários para rodar o DBT estão presentes no script `run-pipeline.sh` no diretório raiz. Os seguintes:
+
+```python
+dbt debug
+dbt compile
+dbt run
+```
+
+Ao fim desta etapa, toda a modelagem foi documentada presente em `schema.yml`, no diretório `project2_dbt/models`. Cada modelo foi descrito com informações sobre sua lógica de transformação e origem dos dados.
 
 
 
