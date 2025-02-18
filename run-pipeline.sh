@@ -1,8 +1,11 @@
 #!/bin/bash
 
+python3 ./etapa1_etl/extract.py
+
+python3 ./etapa1_etl/load.py 
 
 # Caminho do diretório onde o script está
-PROJECT_DIR="$(dirname "$(realpath "$0")")"
+PROJECT_DIR="$(dirname "$(realpath "$0")")/project2_dbt/"
 
 echo "Iniciando DBT Debug..."
 dbt debug --project-dir "$PROJECT_DIR"

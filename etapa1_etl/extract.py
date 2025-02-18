@@ -5,7 +5,7 @@ import xlrd
 # Tabela 1: Projeções
 
 def carregar_projecoes():
-    return pd.read_excel("/home/polia/repos/tarefa2/Tabelas/projecoes_2024_tab4_indicadores.xlsx", skiprows=6)
+    return pd.read_excel("../Tabelas/projecoes_2024_tab4_indicadores.xlsx", skiprows=6)
 
 
 # Tabela 2: Faixa etária
@@ -27,7 +27,7 @@ anos = ["2018", "2019", "2020", "2021", "2022", "2023"]
 def carregar_etario(ano):
 
     df = pd.read_excel(
-        "/home/polia/repos/tarefa2/Tabelas/tabela_1_1_Indic_BR.xls",
+        "../Tabelas/tabela_1_1_Indic_BR.xls",
         sheet_name=ano,
         skiprows=2,
         usecols=list(colunas_desejadas_etario.keys())
@@ -64,7 +64,7 @@ anos = ["2018", "2019", "2020", "2021", "2022", "2023"]
 def carregar_instrucao(ano):
 
     df = pd.read_excel(
-        "/home/polia/repos/tarefa2/Tabelas/tabela_1_1_Indic_BR.xls",
+        "../Tabelas/tabela_1_1_Indic_BR.xls",
         sheet_name=ano,
         skiprows=2,
         usecols=list(colunas_desejadas_instrucao.keys())
@@ -102,7 +102,7 @@ def carregar_socio():
     inst_sal = pd.concat(
         [
             pd.read_excel(
-                "/home/polia/repos/tarefa2/Tabelas/tabela_1_17_InstrCaract_Rend.xls",
+                "../Tabelas/tabela_1_17_InstrCaract_Rend.xls",
                 sheet_name=ano,
                 skiprows=3,
                 usecols=colunas_desejadas_BR
@@ -113,7 +113,7 @@ def carregar_socio():
             
             .join(
                 pd.read_excel(
-                    "/home/polia/repos/tarefa2/Tabelas/tabela_1_17_InstrCaract_Rend.xls",
+                    "../Tabelas/tabela_1_17_InstrCaract_Rend.xls",
                     sheet_name=ano,
                     skiprows=5,
                 ).drop(columns=["Unnamed: 0", "Unnamed: 1"])
@@ -131,7 +131,7 @@ def carregar_socio():
     idade_sal = pd.concat(
         [
             pd.read_excel(
-                "/home/polia/repos/tarefa2/Tabelas/tabela_1_15_OcupCaract_Geo_Rend.xls",
+                "../Tabelas/tabela_1_15_OcupCaract_Geo_Rend.xls",
                 sheet_name=ano,
                 skiprows=2,
                 usecols=list(colunas_desejadas_IDADE_BR.keys())
@@ -142,7 +142,7 @@ def carregar_socio():
             
             .join(
                 pd.read_excel(
-                    "/home/polia/repos/tarefa2/Tabelas/tabela_1_15_OcupCaract_Geo_Rend.xls",
+                    "../Tabelas/tabela_1_15_OcupCaract_Geo_Rend.xls",
                     sheet_name=ano,
                     skiprows=4,
                     usecols=colunas_desejadas_IDADE

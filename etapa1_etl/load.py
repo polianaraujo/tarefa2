@@ -13,7 +13,7 @@ host = "0.0.0.0"  # ou IP do servidor
 database_name = "projecoes2_banco"
 
 # Arquivos CSV para cada tabela
-csv_path = "/home/polia/repos/tarefa2/etapa1_etl/csv_temp"
+csv_path = os.path.join(os.path.dirname(__file__),"csv_temp")
 csv_projecoes = csv_path + '/projecoes.csv'
 csv_etario = csv_path + '/faixa_etario.csv'
 csv_socio = csv_path + '/faixa_socio.csv'

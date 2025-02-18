@@ -1,0 +1,6 @@
+dbt-mysql <= 1.7.0
+pandas
+cryptography
+pymysql
+sqlalchemy
+matplotlib
