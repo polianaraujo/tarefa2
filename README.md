@@ -77,7 +77,7 @@ Esta etapa foi realizada no notebook Jupyter denominado ```graphics.ipynb``` e a
 
 Com isso podemos tirar algumas conclusões analisando os gráficos gerados.
 
-### GRÁFICO 1: Projeção da População até 2045
+### 📈 GRÁFICO 1: Projeção da População até 2045
 
 ![Projeções](https://github.com/polianaraujo/tarefa2/blob/main/images/projecoes.png)
 
@@ -100,7 +100,7 @@ Os dados mostram que:
 
 
 
-### GRÁFICOS 2: Força de Trabalho por Perfil Etário e Grau de Instrução
+### 📊 GRÁFICOS 2: Força de Trabalho por Perfil Etário e Grau de Instrução
 
 ![Força de Trabalho](https://github.com/polianaraujo/tarefa2/blob/main/images/forca_trab.png)
 
@@ -115,7 +115,7 @@ Os principais pontos observados:
 🔍 Conclusão: A tendência de aumento da escolaridade reforça a necessidade de investimentos em qualificação profissional e inovação no mercado de trabalho. Empresas que oferecem soluções voltadas para educação continuada, cursos técnicos e qualificação de mão de obra podem se beneficiar desse cenário.
 
 
-### GRÁFICOS 3: Força de Trabalho por Perfil Etário e Grau de Instrução
+### 📉 GRÁFICOS 3: Força de Trabalho por Perfil Etário e Grau de Instrução
 
 ![Salário (Idade x Instrução)](https://github.com/polianaraujo/tarefa2/blob/main/images/salario.png)
 
@@ -125,6 +125,6 @@ Quanto aos rendimentos, observa-se valores maiores relacionados às faixas etár
 
 Assim, diante do aumento da idade média dos brasileiros e do percentual destes com qualificação, podemos inferir que na janela de crescimento demográfico, i.e., nos próximos 20 anos, até 2045,  teremos um aumento deste público que demandará cada vez mais produtos e serviços especializados para este público, que é naturalmente mais exigente e financeiramente mais abastado.
 
-## Vídeo da Explicação
+## 📹 Vídeo da Explicação
 
 [Clique aqui](https://drive.google.com/file/d/1b6ZRDbl6kAEHLYfH1G9gK-RziaqnSBX9/view?usp=sharing) para acessar o vídeo da explicação no Google Drive.
