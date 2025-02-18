@@ -54,17 +54,17 @@ Nesta etapa, foi utilizado o DBT para criar um projeto e conectá-lo ao banco de
 
 Além disso, para facilitar a visualização dos dados e a criação de consultas SQL, foi utilizado o DBeaver, uma ferramenta gráfica que possibilita a inspeção e manipulação das tabelas e views armazenadas no banco de dados.
 
-Com os modelos prontos, foram realizados cálculos essenciais para análises estatísticas e projeções que garantem que os dados estejam preparados para a geração de relatórios estratégicos, como:
+Com os quatro modelos prontos, foram realizados cálculos essenciais para análises estatísticas e projeções que garantem que os dados estejam preparados para a geração de relatórios estratégicos, como:
 
 - Soma da população de homens e mulheres para visualizar a quantidade total.
 - Soma da população apta a trabalhar por ano em diferentes faixas etárias e de grau de instrução.
 
-Os comandos necessários para rodar o DBT estão presentes no script `run-pipeline.sh` no diretório raiz. Os seguintes:
+Os comandos necessários para rodar os modelos DBT estão presentes no script `run-pipeline.sh` no diretório raiz. Os seguintes:
 
 ```python
-dbt debug
-dbt compile
-dbt run
+dbt debug   # Verifica se o banco de dados está acessível, as credenciais de autenticação e se o ambiente está configurado corretamente.
+dbt compile # Converte os arquivos .sql que contêm código dbt (com macros, variáveis e Jinja) em SQL puro, pronto para ser executado no banco de dados.
+dbt run     # Roda os arquivos .sql transformados dentro do banco, cria ou atualiza tabelas e views e aplica as transformações.
 ```
 
 Ao fim desta etapa, toda a modelagem foi documentada presente em `schema.yml`, no diretório `project2_dbt/models`. Cada modelo foi descrito com informações sobre sua lógica de transformação e origem dos dados.
@@ -73,7 +73,7 @@ Ao fim desta etapa, toda a modelagem foi documentada presente em `schema.yml`, n
 
 ## Etapa 3: Criação de um Relatório ou Dashboard (Opcional)
 
-Esta etapa foi realizada no notebook Jupyter denominado ```notebook.ipynb``` e a biblioteca matplotilib.pyplot para plotar os gráficos para visualização das análises.
+Esta etapa foi realizada no notebook Jupyter denominado ```graphics.ipynb``` e as bibliotecas `sqlalchemy` para fazer a conexão com o banco de dados e a matplotilib.pyplot para plotar os gráficos para visualização das análises.
 
 Com isso podemos tirar algumas conclusões analisando os gráficos gerados.
 
