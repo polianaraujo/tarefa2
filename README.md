@@ -41,7 +41,7 @@ As tabelas criadas dentro do banco incluem:
 - ```salario_table``` – Armazena dados de rendimento por faixa etária e grau de instrução.
 
 Para garantir um ambiente seguro e eficiente, além de permitir que o banco de dados seja facilmente gerenciado e acessado de qualquer máquina configurada para utilizar Docker, o MySQL foi executado dentro de um container Docker com o seguinte comando:
-```docker run --name db-lodaq -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:8.3```
+```docker run --name db-lodaq -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 -d mysql:8.3```
 
 
 
